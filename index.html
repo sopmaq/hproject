@@ -1,0 +1,59 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>Sophie Honors Project</title>
+  <meta charset="UTF-8">
+  <!-- Reason for below: people can zoom in -->
+  <meta name="viewport" content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="background-overlay"></div>
+  <nav>
+    <ul>
+      <li>Learning</li>
+      <li class="active">Taking Action</li>
+      <li>Reflecting</li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Here's what you can do</h1>
+    <div class="header-container">
+      <h2>These are your saved <strong>resource cards.</strong></h2>
+      <ul>
+        <li>Print</li>
+        <li>Download</li>
+        <li>Email</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="overlay" id="labels">
+      <button class="exit" onclick="closeOverlay()">X</button>
+      <div>
+        <input type="text" id="label-name" placeholder="Label name">
+        <input type="color" id="colorpicker">
+        <button id="labelSubmit">Create label</button>
+      </div>
+    </section>
+    <section class="filter">
+
+      <section id="createLabel">
+        <button class="create-label" onclick="createLabel()">Create new label</button>
+      </section>
+      <section id="labelList">
+      </section>
+    </section>
+    <div class="add-card">
+      <button class="add-card-button" onclick="addCard()">Add custom card</button>
+    </div>
+    <section id="cards">
+    </section>
+  </main>
+  <footer></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
